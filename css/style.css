@@ -1,0 +1,19 @@
+.dashboard-data{ 
+	transition: all .2s ease-in-out; 
+}
+
+.dashboard-data:hover { 
+	transform: scale(1.1); 
+}
+.user-input{
+	margin: .5rem .5rem;
+}
+
+.reg-thead{
+	color:white;
+	background-color: #e74a3B;
+}
+td:hover{
+	background-color: #e74a3b;
+	color:white;
+}
