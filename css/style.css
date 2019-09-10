@@ -13,7 +13,11 @@
 	color:white;
 	background-color: #e74a3B;
 }
-td:hover{
+.clickable-table-data:hover{
+	background-color: #e74a3b;
+	color:white;
+}
+.clickable-table-row:hover{
 	background-color: #e74a3b;
 	color:white;
 }
