@@ -1,9 +1,9 @@
-.dashboard-data{ 
-	transition: all .2s ease-in-out; 
+.dashboard-data{
+	transition: all .2s ease-in-out;
 }
 
-.dashboard-data:hover { 
-	transform: scale(1.1); 
+.dashboard-data:hover {
+	transform: scale(1.1);
 }
 .user-input{
 	margin: .5rem .5rem;
@@ -16,4 +16,7 @@
 td:hover{
 	background-color: #e74a3b;
 	color:white;
+}
+a:hover{
+	text-decoration: none;
 }
