@@ -24,3 +24,9 @@
 a:hover{
 	text-decoration: none;
 }
+.card-with-table {
+	overflow-x: scroll;
+}
+.navbar{
+	position: static;
+}

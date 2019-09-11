@@ -64,7 +64,7 @@
             <span>Utilities</span>
           </a>
           <!-- Collapse menu items -->
-          <div id="collapseUtilities" class="collapse" aria-labelledby="collapseUtilities" data-parent="#accordionSidebar">
+          <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Utilities:</h6>
               <a class="collapse-item" href="Accounts.html">Accounts</a>
@@ -118,13 +118,14 @@
         <!-- Main Content - BODY -->
         <div id="content">
         <!-- Topbar -->
-          <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <nav class="navbar navbar-expand navbar-light bg-white topbar navbar-fixed-top mb-4 shadow">
             <!-- Sidebar Toggle (Topbar) -->
-            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <div class="container">
+              <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
               <i class="fa fa-bars"></i>
-            </button>
-            <!-- Topbar Navbar -->
-            <ul class="navbar-nav ml-auto">
+              </button>
+              <!-- Topbar Navbar -->
+              <ul class="navbar-nav ml-auto">
               <!-- Nav Item - Search Dropdown (Visible Only XS) -->
               <li class="nav-item dropdown no-arrow d-sm-none">
                 <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -134,7 +135,7 @@
                 <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                   <form class="form-inline mr-auto w-100 navbar-search">
                     <div class="input-group">
-                      <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="searchDropdown"/>
+                      <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2"/>
                       <div class="input-group-append">
                         <button class="btn btn-danger" type="button">
                           <i class="fas fa-search fa-sm"></i>
@@ -277,6 +278,7 @@
               </div>
               </li>
             </ul>
+            </div>
           </nav>
           <!-- End of Topbar -->
           <!-- Begin Page Content -->
@@ -343,7 +345,7 @@
           <div class="row">
             <!-- Quick Registry -->
             <div class="col-xl-12 col-lg-12">
-              <div class="card shadow mb-4">
+              <div class="card card-with-table shadow mb-4">
 
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -452,14 +454,10 @@
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
   <script src="javascript_database.js"></script>
-
   </body>
-
 </html>
