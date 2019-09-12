@@ -298,10 +298,10 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="h4 font-weight-bold text-danger mb-2">Player Profiles</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">Current Players: 120</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="playerCountAll">Current Players: 120</div>
                       <div class ="row ">
-                          <div class="h6 mb-0 font-weight-bold text-gray-800 col-5 mt-2">Alive: 60</div>
-                          <div class="h6 mb-0 font-weight-bold text-gray-800 col-5 mt-2">Dead: 60</div>
+                          <div class="h6 mb-0 font-weight-bold text-gray-800 col-5 mt-2" id="playerCountAlive">Alive: 60</div>
+                          <div class="h6 mb-0 font-weight-bold text-gray-800 col-5 mt-2" id="playerCountDead">Dead: 60</div>
                       </div>
                     </div>
                   </div>
@@ -366,7 +366,7 @@
                 <!-- Card Header - Dropdown End -->
                 <!-- Card Body - Dropdown -->
                 <div class="card-body">
-                  <table class="table">
+                  <table class="table"  id="registry">
                     <thead>
                       <tr>
                         <th scope="col">Rank</th>
@@ -379,33 +379,7 @@
                       </tr>
                     </thead>
                     <tbody class="table-hover">
-                      <tr>
-                        <th scope="row">1.)</th>
-                        <td>Mark Otto</td>
-                        <td>Alive</td>
-                        <td>Mundo</td>
-                        <td>7</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2.)</th>
-                        <td>Jacob Smith</td>
-                        <td>Dead</td>
-                        <td>Dirk</td>
-                        <td>6</td>
-                        <td>Mark Otto</td>
-                        <td>Larry Langston</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3.)</th>
-                        <td>Larry Langston</td>
-                        <td>Alive</td>
-                        <td>Mundo</td>
-                        <td>3</td>
-                        <td>Mark Otto</td>
-                        <td></td>
-                      </tr>
+
                     </tbody>
                   </table>
                 </div>
@@ -458,6 +432,6 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
-  <script src="javascript_database.js"></script>
+  <script src="js/ajax-requests.js"></script>
   </body>
 </html>

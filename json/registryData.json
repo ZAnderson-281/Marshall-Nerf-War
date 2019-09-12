@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Jack",
+    "status": "Alive",
+    "team": "NA",
+    "kills": 3,
+    "killedBy": "",
+    "killedBy2": "",
+    "email": "name@domain.com"
+  },
+  {
+    "name": "Sam",
+    "status": "Dead",
+    "team": "NA",
+    "kills": 3,
+    "killedBy": "Jack",
+    "killedBy2": "Rick",
+    "email": "name@domain.com"
+  },
+  {
+    "name": "Sarah",
+    "status": "Alive",
+    "team": "NA",
+    "kills": 2,
+    "killedBy": "Sam",
+    "killedBy2": "",
+    "email": "name@domain.com"
+  },
+  {
+    "name": "Rick",
+    "status": "Alive",
+    "team": "NA",
+    "kills": 5,
+    "killedBy": "",
+    "killedBy2": "",
+    "email": "name@domain.com"
+  },
+  {
+    "name": "Devin",
+    "status": "Dead",
+    "team": "NA",
+    "kills": 5,
+    "killedBy": "Sarah",
+    "killedBy2": "Rick",
+    "email": "name@domain.com"
+  }
+]
