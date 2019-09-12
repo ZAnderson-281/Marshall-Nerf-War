@@ -27,7 +27,7 @@ request.onreadystatechange = function () {
         // table html code
         registry_table_element = `
             <td scope="row">${i+1}</td>
-            <td>${data[i].name}</td>
+            <td>${data[i].gameName}</td>
             <td>${data[i].status}</td>
             <td>${data[i].team}</td>
             <td>${data[i].kills}</td>
@@ -56,7 +56,7 @@ request.onreadystatechange = function () {
       alert(request.status);
     }
 
-    
+
 
   }
 }
