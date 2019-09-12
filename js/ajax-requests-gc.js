@@ -20,7 +20,7 @@ request.onreadystatechange = function () {
       // Parse the json data into javascript
       data = JSON.parse(request.responseText);
       // Log the data to the console
-      console.log(data);
+      // console.log(data);
     }else{
       //alert the error
       alert(request.status);
