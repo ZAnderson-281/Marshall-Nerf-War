@@ -292,7 +292,7 @@
           <div class="row">
             <!-- Team Profile -->
             <div class="col-xl-4 col-md-12 mb-5">
-              <a href="#">
+              <a href="#" id="playerInfo" onclick="changeJSON(this.id)">
               <div class="card border-left-danger shadow h-100 py-2 dashboard-data">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
@@ -311,7 +311,7 @@
             </div>
 
             <div class="col-xl-4 col-md-12 mb-5">
-              <a href="#">
+              <a href="#" id="teamInfo" onclick="changeJSON(this.id)">
               <div class="card border-left-danger shadow h-100 py-2 dashboard-data">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
@@ -356,7 +356,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
                       <div class="dropdown-header">Options:</div>
-                      <a id="war-reg" class="dropdown-item" href="#" onclick="changeJSON(this.id)">Individual data</a>
+                      <a id="ind-reg" class="dropdown-item" href="#" onclick="changeJSON(this.id)">Individual data</a>
                       <a id="team-reg" class="dropdown-item" href="#" onclick="changeJSON(this.id)">Team data</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">Generate report</a>
