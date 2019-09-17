@@ -1,6 +1,7 @@
 
 //ON Menu Select Change
 function changeJSON(clicked_id){
+
   //Create the variables
   let request;
   let data;
