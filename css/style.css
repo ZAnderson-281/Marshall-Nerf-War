@@ -3,7 +3,7 @@
 }
 
 .dashboard-data:hover {
-	transform: scale(1.1);
+	transform: scale(1.03);
 }
 .user-input{
 	margin: .5rem .5rem;
@@ -29,4 +29,9 @@ a:hover{
 }
 .navbar{
 	position: static;
+}
+
+.card-with-table {
+	overflow-y: scroll;
+	height: 600px;
 }

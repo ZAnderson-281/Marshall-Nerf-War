@@ -28,8 +28,6 @@ function changeJSON(clicked_id){
           <th>Player Name</th>
           <th>Status</th>
           <th>Kills</th>
-          <th>Killed By</th>
-          <th>Killed By 2</th>
           `
           document.getElementsByClassName('reg-thead')[0].innerHTML = table_header;
           document.getElementById('registryBody').innerHTML = '<tr></tr>';
@@ -48,8 +46,6 @@ function changeJSON(clicked_id){
             <td>${data[i].name}</td>
             <td>${data[i].status}</td>
             <td>${data[i].kills}</td>
-            <td>${data[i].killedBy}</td>
-            <td>${data[i].killedBy2}</td>
               `;
             // log the html into the console
             console.log(registry_table_element);
@@ -149,8 +145,6 @@ function changeJSON(clicked_id){
           <th>Player Name</th>
           <th>Status</th>
           <th>Kills</th>
-          <th>Killed By</th>
-          <th>Killed By 2</th>
           `
           document.getElementsByClassName('reg-thead')[0].innerHTML = table_header;
           document.getElementById('registryBody').innerHTML = '<tr></tr>';
@@ -170,8 +164,6 @@ function changeJSON(clicked_id){
             <td>${data[i].name}</td>
             <td>${data[i].status}</td>
             <td>${data[i].kills}</td>
-            <td>${data[i].killedBy}</td>
-            <td>${data[i].killedBy2}</td>
               `;
             // log the html into the console
             console.log(registry_table_element);
@@ -210,10 +202,8 @@ function changeJSON(clicked_id){
           table_header = `
           <th>Rank</th>
           <th>Player Name</th>
-          <th>Status</th>
           <th>Kills</th>
-          <th>Killed By</th>
-          <th>Killed By 2</th>
+
           `
           document.getElementsByClassName('reg-thead')[0].innerHTML = table_header;
           document.getElementById('registryBody').innerHTML = '<tr></tr>';
@@ -228,12 +218,10 @@ function changeJSON(clicked_id){
           for (let i = 0; i<data.length;i+=1){
             // table html code
             registry_table_element = `
-            <td>${i+1}</td>
-            <td>${data[i].name}</td>
-            <td>${data[i].status}</td>
-            <td>${data[i].kills}</td>
-            <td>${data[i].killedBy}</td>
-            <td>${data[i].killedBy2}</td>
+            <td class="pt-2 pb-2">${i+1}</td>
+            <td class="pt-2 pb-2">${data[i].name}</td>
+            <td class="pt-2 pb-2">${data[i].kills}</td>
+ 
               `;
 
             // log the html into the console
