@@ -27,13 +27,14 @@ app.use((req, res, next) => {
     }
     next();
   });
+  
 // ===== BODY PARSERS =====
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 // ===== API ROUTES =====
 app.use('/api/users', require('./server/routes/userApiRoutes')); // Player API
-
+app.use('/api/admin', require('./server/routes/adminApiRoutes')) // Admin API
 
 // ===== SERVER CREATION =====
 const PORT = process.env.PORT || 5000;

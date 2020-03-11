@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+
+// API MODS
 const users = require('../api/users');
 
 // Gets all players
