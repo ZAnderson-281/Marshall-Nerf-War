@@ -80,7 +80,6 @@ const GAME_DATA_SUBMIT = () => {
     const subButton = document.querySelector('#submitCompCreator');
 
     subButton.addEventListener('click', getDataFromForm);
-
 }
 
 GAME_DATA_SUBMIT();
