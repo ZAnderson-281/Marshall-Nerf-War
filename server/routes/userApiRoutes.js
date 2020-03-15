@@ -12,24 +12,47 @@ const router = express.Router();
 
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb+srv://zac:Poptart514@testmnw-crhav.azure.mongodb.net/test?retryWrites=true&w=majority";
-
+const ObjectID = require('mongodb').ObjectID;
 
 // ===== API MODUALS =====
 const users = require('../api/users');
 
 // ===== Gets all players =====
-router.get('/', (req,res) => res.json(users));
+router.get('/', (req,res) => {
+
+    // Connect to the database
+    MongoClient.connect(url, function(err, db) {
+        if (err) throw err;
+
+        // get database
+        let dbo = db.db("MNWPlayerData");
+
+        // Search collection  
+        dbo.collection("Players").find({}).toArray( (err, result) => {
+            if (err) throw err;
+            // Respond to the request
+            res.json(result);
+            // Close the database
+            db.close();
+        });
+    });
+});
 
 // ===== Gets individual player =====
 router.get('/:id', (req,res) => {
-    const found = users.some(player => player.id === parseInt(req.params.id));
+    // Connect to the database
+    MongoClient.connect(url, function(err, db) {
+        if (err) throw err;
 
-    if (found) {
-        res.json(users.filter(player => player.id === parseInt(req.params.id)));
-    } else {
-        res.status(400).json({msg: `Member not found`});
-    }
+        // get database
+        let dbo = db.db("MNWPlayerData");
 
+        // Search collection  
+        let x = dbo.collection("Players").findOne({_id: ObjectID(req.params.id)}, function(err, player) {
+            if (err) throw err;
+            res.json(player)
+          });
+    });
 })
 
 // ===== Create Player =====
